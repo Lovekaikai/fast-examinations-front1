@@ -1,0 +1,275 @@
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+li,
+ul,
+p,
+div,
+body,
+html,
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+.input-wrap .ivu-input,
+.input-wrap .ivu-input-wrapper,
+.input-wrap .ivu-select-single,
+.input-wrap .ivu-select-selection {
+  height: 34px;
+  border-color: #CCC;
+  font-size: 13px !important;
+}
+.input-wrap /deep/ .ivu-select-selected-value,
+.input-wrap /deep/ .ivu-select-placeholder {
+  font-size: 13px !important;
+  height: 34px !important;
+}
+.input-wrap /deep/ .ivu-select-item {
+  padding: 7px 16px;
+  font-size: 13px !important;
+}
+.input-wrap /deep/ .ivu-input-icon {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+}
+.input-wrap /deep/ .ivu-input-icon:hover {
+  cursor: pointer;
+}
+.input-wrap /deep/ .ivu-cascader-menu-item {
+  font-size: 13px !important;
+}
+.operation-item {
+  color: #0072F2;
+  text-decoration: underline;
+}
+.hoverPointer:hover {
+  cursor: pointer;
+}
+.ivu-table {
+  font-size: 13px !important;
+}
+ /deep/ .ivu-modal-wrap {
+  top: 50%;
+  transform: translateY(-50%);
+}
+ /deep/ .ivu-modal-wrap .ivu-modal {
+  top: 0;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content {
+  border-radius: 2px !important;
+  background: #ffffff !important;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2) !important;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-modal-header p {
+  font-size: 16px !important;
+  color: #333333 !important;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-modal-body {
+  min-height: 250px !important;
+  padding: 20px 44px;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-form-item-label {
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-input,
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-input-wrapper,
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-select-single,
+ /deep/ .ivu-modal-wrap .ivu-modal-content .ivu-select-selection {
+  width: 342px;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .input-wrap {
+  margin-bottom: 24px !important;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .input-wrap .ivu-select-selected-value,
+ /deep/ .ivu-modal-wrap .ivu-modal-content .input-wrap .ivu-select-placeholder {
+  font-size: 13px !important;
+  height: 34px;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .input-wrap .ivu-select-item {
+  padding: 7px 16px;
+  font-size: 13px !important;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .footer {
+  text-align: center;
+}
+ /deep/ .ivu-modal-wrap .ivu-modal-content .footer .saveBtn {
+  margin-right: 40px;
+}
+ /deep/ .ivu-modal-wrap .error {
+  font-size: 12px;
+  color: #e73c3b;
+  line-height: 24px;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: #0FB190 !important;
+  background: #1CC09F !important;
+}
+.demo-upload-list {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 4px;
+}
+.demo-upload-list img {
+  width: 100%;
+  height: 100%;
+}
+.upLoad-wrap {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+.demo-upload-list-cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.demo-upload-list:hover .demo-upload-list-cover {
+  display: block;
+}
+.demo-upload-list-cover i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.textarea {
+  height: 114px !important;
+}
+.textarea .ivu-input,
+.textarea .ivu-input-wrapper {
+  height: 114px !important;
+  resize: none !important;
+}
+.inspect-item .ivu-input,
+.param-unit .ivu-input,
+.category-inspec .ivu-input,
+.methods-inspec .ivu-input,
+.add-standard .ivu-input,
+.inspect-item .ivu-input-wrapper,
+.param-unit .ivu-input-wrapper,
+.category-inspec .ivu-input-wrapper,
+.methods-inspec .ivu-input-wrapper,
+.add-standard .ivu-input-wrapper,
+.inspect-item .ivu-select-single,
+.param-unit .ivu-select-single,
+.category-inspec .ivu-select-single,
+.methods-inspec .ivu-select-single,
+.add-standard .ivu-select-single,
+.inspect-item .ivu-select-selection,
+.param-unit .ivu-select-selection,
+.category-inspec .ivu-select-selection,
+.methods-inspec .ivu-select-selection,
+.add-standard .ivu-select-selection,
+.inspect-item .ivu-date-picker,
+.param-unit .ivu-date-picker,
+.category-inspec .ivu-date-picker,
+.methods-inspec .ivu-date-picker,
+.add-standard .ivu-date-picker {
+  width: 100% !important;
+}
+.modal .ivu-modal-content .ivu-input,
+.modal .ivu-modal-content .ivu-input-wrapper .ivu-form-item-content,
+.modal .ivu-modal-content .ivu-select-single .ivu-select-selection {
+  width: 100% !important;
+}
+.modal .ivu-modal-content .ivu-modal-body {
+  padding: 32px !important;
+  min-height: 150px;
+  max-height: 450px;
+  overflow: auto;
+}
+.modal .ivu-modal-content .operation-item {
+  margin-left: 42px;
+  font-size: 13px;
+}
+.modal .ivu-modal-content .condition-item {
+  background: #F3F3F3;
+  padding: 20px 20px 30px;
+  margin-bottom: 20px;
+}
+.modal .ivu-modal-content .condition-item .condition-title {
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.modal .ivu-modal-content .condition-item .condition-title .remove {
+  font-size: 16px;
+  color: #D9534F;
+  margin-left: 20px;
+}
+.modal .ivu-modal-content .condition-item .assist-item {
+  margin-top: 20px;
+}
+.modal .ivu-modal-content .condition-item .ivu-form-item {
+  display: inline-block;
+}
+.modal .ivu-modal-content .condition-item .ivu-form-item:nth-child(2) {
+  margin: 0 20px;
+}
+.modal .ivu-modal-content .condition-item .ivu-form-item:not(:last-child) {
+  width: 29% !important;
+}
+.modal .ivu-modal-content .condition-item .ivu-form-item .ivu-input,
+.modal .ivu-modal-content .condition-item .ivu-form-item .ivu-input-wrapper,
+.modal .ivu-modal-content .condition-item .ivu-form-item .ivu-select {
+  width: 100%;
+  height: 32px;
+}
+.modal .ivu-modal-content .condition-item .operation {
+  font-size: 30px;
+  line-height: 34px;
+  color: #1CC09F;
+  margin-left: 34px;
+}
+.laboratory-manage .input-wrap /deep/ .ivu-input,
+.organization-manage .input-wrap /deep/ .ivu-input,
+.account-manage .input-wrap /deep/ .ivu-input,
+.data-manage .input-wrap /deep/ .ivu-input,
+.laboratory-manage .input-wrap /deep/ .ivu-input-wrapper,
+.organization-manage .input-wrap /deep/ .ivu-input-wrapper,
+.account-manage .input-wrap /deep/ .ivu-input-wrapper,
+.data-manage .input-wrap /deep/ .ivu-input-wrapper,
+.laboratory-manage .input-wrap /deep/ .ivu-date-picker,
+.organization-manage .input-wrap /deep/ .ivu-date-picker,
+.account-manage .input-wrap /deep/ .ivu-date-picker,
+.data-manage .input-wrap /deep/ .ivu-date-picker,
+.laboratory-manage .input-wrap /deep/ .ivu-cascader,
+.organization-manage .input-wrap /deep/ .ivu-cascader,
+.account-manage .input-wrap /deep/ .ivu-cascader,
+.data-manage .input-wrap /deep/ .ivu-cascader,
+.laboratory-manage .input-wrap /deep/ .ivu-select,
+.organization-manage .input-wrap /deep/ .ivu-select,
+.account-manage .input-wrap /deep/ .ivu-select,
+.data-manage .input-wrap /deep/ .ivu-select,
+.laboratory-manage .input-wrap /deep/ .ivu-select-selection,
+.organization-manage .input-wrap /deep/ .ivu-select-selection,
+.account-manage .input-wrap /deep/ .ivu-select-selection,
+.data-manage .input-wrap /deep/ .ivu-select-selection {
+  width: 100%;
+  height: 34px;
+}

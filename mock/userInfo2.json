@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "message": "登陆成功",
+    "data": {
+        "id": 2,
+        "account": "string",
+        "token": "9c653c272d38c1398ddffeeea88aca9934df16cff71145889f454ce9f906e3c3aab0cc36412d729d492547609363a9bf",
+        "accountStatus": 1,
+        "role": {
+            "roleId": 2,
+            "roleName": "ROLE_SUPERVISE"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "code": 200,
+    "message": "组织机构列表",
+    "data": {
+        "records": [
+            {
+                "valid": 1,
+                "address": "广东广州荔湾华林",
+                "createTime": "2020-4-30 04:52:18",
+                "organization": "林业局",
+                "id": 3
+            },
+            {
+                "valid": 1,
+                "address": "广东广州",
+                "createTime": "2020-4-30 03:12:18",
+                "organization": "农业局",
+                "id": 2
+            }
+        ],
+        "total": 2,
+        "size": 2,
+        "current": 1,
+        "orders": [],
+        "searchCount": true,
+        "pages": 2
+    }
+}

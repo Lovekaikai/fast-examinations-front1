@@ -1,0 +1,376 @@
+// 背景颜色 + 边框颜色
+@theme-color: #1CC09F; //主題顔色
+@asside-bgColor: #283643; //左侧栏背景颜色
+@btn-bgColor-green: #1CC09F; //按钮背景绿颜色
+@btn-bdColor-green: #0FB190; //按钮边框绿颜色
+@btn-bgColor-red: #D9534F; //按钮背景红颜色
+@btn-bdColor-red: #D43F3A; //按钮边框红颜色
+@popup-bgColor: #F3F3F3; //弹窗背景颜色
+@bdColor-grey: #ECECEC; //边框颜色
+@bdColor-grey-s: #CCC; //边框颜色
+@bdColor-grey-ss: #DDD; //边框颜色
+
+
+// 字体大小
+@fontsize-small: 12px;
+@fontsize-small-s: 13px;
+@fontsize-middle: 14px;
+@fontsize-large: 16px;
+@fontsize-large-x: 18px;
+@fontsize-large-xx: 20px;
+@fontsize-large-xxx: 24px;
+@fontsize-large-xxxx: 28px;
+
+
+// 字体颜色
+@color-white: #fff; //字体颜色
+@color-whiteFC: #ffffffc4; // 不是太白的颜色
+@color-dark-grey: #333333; //字体颜色
+@color-grey: #B1B3B3; //字体颜色
+@color-grey-s: #808080; //字体颜色
+@color-green: #00E426; //字体颜色
+@color-green-s: #1CC09F; // 字体颜色
+@color-red: #E60000; // 字体颜色
+@color-red-s: #FF0000; // *颜色
+@color-blue: #0080EE; //链接颜色-1
+@color-blue-s: #0082F1; // 字体颜色
+@color-blue-ss: #0072F2; //链接颜色-2
+
+
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li,
+ul,
+p,
+div,
+body,
+html,
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.input-wrap {
+
+  .ivu-input,
+  .ivu-input-wrapper,
+  .ivu-select-single,
+  .ivu-select-selection {
+    // width: 324px;
+    height: 34px;
+    // line-height: 36px!important;
+    border-color: @bdColor-grey-s;
+    font-size: @fontsize-small-s  !important;
+  }
+
+  /deep/.ivu-select-selected-value,
+  /deep/.ivu-select-placeholder {
+    font-size: @fontsize-small-s  !important;
+    height: 34px !important;
+    // line-height: 36px !important;
+  }
+
+  /deep/.ivu-select-item {
+    padding: 7px 16px;
+    font-size: @fontsize-small-s  !important;
+  }
+
+
+  /deep/.ivu-input-icon {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  /deep/.ivu-cascader-menu-item {
+    font-size: @fontsize-small-s  !important;
+  }
+}
+
+.operation-item {
+  color: @color-blue-ss;
+  text-decoration: underline;
+}
+
+.hoverPointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+// 表格样式
+.ivu-table {
+  font-size: @fontsize-small-s  !important;
+}
+
+// .ivu-table-row {
+//   td {
+//     .ivu-table-cell {
+//       span {
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//       }
+//     }
+//   }
+// }
+
+
+// 弹窗的样式
+/deep/.ivu-modal-wrap {
+  top: 50%;
+  transform: translateY(-50%);
+
+  .ivu-modal {
+    top: 0;
+  }
+
+  .ivu-modal-content {
+    border-radius: 2px !important;
+    background: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2) !important;
+
+    .ivu-modal-header p {
+      font-size: @fontsize-large  !important;
+      color: @color-dark-grey  !important;
+    }
+
+    .ivu-modal-body {
+      min-height: 250px !important;
+      padding: 20px 44px;
+    }
+
+    .ivu-form-item-label {
+      font-size: @fontsize-small-s  !important;
+      font-weight: bold !important;
+    }
+
+    .ivu-input,
+    .ivu-input-wrapper,
+    .ivu-select-single,
+    .ivu-select-selection {
+      width: 342px;
+    }
+
+    .input-wrap {
+      margin-bottom: 24px !important;
+
+      .ivu-select-selected-value,
+      .ivu-select-placeholder {
+        font-size: @fontsize-small-s  !important;
+        height: 34px;
+        // line-height: 36px;
+      }
+
+      .ivu-select-item {
+        padding: 7px 16px;
+        font-size: @fontsize-small-s  !important;
+      }
+    }
+
+    .footer {
+      text-align: center;
+
+      .saveBtn {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .error {
+    font-size: @fontsize-small;
+    color: #e73c3b;
+    line-height: 24px; 
+  }
+}
+
+// 复选框的样式
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: @btn-bdColor-green  !important;
+  background: @btn-bgColor-green  !important;
+}
+
+// 上传图片的样式
+.demo-upload-list {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 4px;
+}
+
+.demo-upload-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.upLoad-wrap {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.demo-upload-list-cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.demo-upload-list:hover .demo-upload-list-cover {
+  display: block;
+}
+
+.demo-upload-list-cover i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.textarea {
+  height: 114px !important;
+
+  .ivu-input,
+  .ivu-input-wrapper {
+    height: 114px !important;
+    resize: none !important;
+  }
+}
+
+// 检验项目-参数单位-类别检验
+.inspect-item,
+.param-unit,
+.category-inspec,
+.methods-inspec,
+.add-standard {
+
+  .ivu-input,
+  .ivu-input-wrapper,
+  .ivu-select-single,
+  .ivu-select-selection,
+  .ivu-date-picker {
+    width: 100% !important;
+  }
+}
+
+
+// 新增检验标准 --- 对话窗样式
+.modal {
+  .ivu-modal-content {
+
+    .ivu-input,
+    .ivu-input-wrapper .ivu-form-item-content,
+    .ivu-select-single .ivu-select-selection {
+      width: 100% !important;
+    }
+
+    .ivu-modal-body {
+      padding: 32px !important;
+      min-height: 150px;
+      max-height: 450px;
+      overflow: auto;
+    }
+
+    .operation-item {
+      margin-left: 42px;
+      font-size: @fontsize-small-s;
+    }
+
+    .condition-item {
+      background: @popup-bgColor;
+      padding: 20px 20px 30px;
+      margin-bottom: 20px;
+
+      .condition-title {
+        font-weight: bold;
+        margin-bottom: 18px;
+
+        .remove {
+          font-size: 16px;
+          color: @btn-bgColor-red;
+          margin-left: 20px;
+        }
+      }
+
+      .assist-item {
+        margin-top: 20px;
+      }
+
+      .ivu-form-item {
+        display: inline-block;
+
+        &:nth-child(2) {
+          margin: 0 20px;
+        }
+
+        &:not(:last-child) {
+          width: 29% !important;
+        }
+
+
+        .ivu-input,.ivu-input-wrapper,.ivu-select {
+          width: 100%;
+          height: 32px;
+        }
+      }
+
+      .operation {
+        font-size: 30px;
+        line-height: 34px;
+        color: @btn-bgColor-green;
+        margin-left: 34px;
+      }
+    }
+  }
+}
+
+// 实验室管理、组织管理、账号管理 公共样式
+.laboratory-manage,
+.organization-manage,
+.account-manage,
+.data-manage {
+  .input-wrap {
+
+    /deep/.ivu-input,
+    /deep/.ivu-input-wrapper,
+    /deep/.ivu-date-picker,
+    /deep/.ivu-cascader,
+    /deep/.ivu-select,
+    /deep/.ivu-select-selection {
+      width: 100%;
+      height: 34px;
+    }
+  }
+}

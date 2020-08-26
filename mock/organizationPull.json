@@ -1,0 +1,42 @@
+{
+    "code": 200,
+    "message": "组织机构下拉列表",
+    "data": [
+        {
+            "organization": "林业局",
+            "id": 3
+        },
+        {
+            "organization": "农业局",
+            "id": 2
+        },
+        {
+            "organization": "林农业局1",
+            "id": 1
+        },
+        {
+            "organization": "林农业局2",
+            "id": 4
+        },
+        {
+            "organization": "林农业局3",
+            "id": 5
+        },
+        {
+            "organization": "林农业局4",
+            "id": 6
+        },
+        {
+            "organization": "林农业局5",
+            "id": 7
+        },
+        {
+            "organization": "林农业局6",
+            "id": 8
+        }, 
+        {
+            "organization": "林农业局7",
+            "id": 9
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "code": 200,
+    "message": "账号列表",
+    "data": {
+        "records": [
+            {
+                "accountStatus": 1,
+                "accountId": 2,
+                "realName": "string1",
+                "createTime": "2020-4-30 05:24:31",
+                "organization": "林业局",
+                "organizationId":1,
+                "mobile": "13149003370",
+                "account": "string11"
+            },
+            {
+                "accountStatus": 1,
+                "accountId": 3,
+                "realName": "string2",
+                "createTime": "2020-5-30 05:24:31",
+                "organization": "林业局",
+                "organizationId":1,
+                "mobile": "13149003370",
+                "account": "string22"
+            },
+            {
+                "accountStatus": 0,
+                "accountId": 4,
+                "realName": "string3",
+                "createTime": "2020-6-30 05:24:31",
+                "organization": "农业局",
+                "organizationId":2,
+                "mobile": "13149003370",
+                "account": "string33"
+            },
+            {
+                "accountStatus": 0,
+                "accountId": 5,
+                "realName": "string4",
+                "createTime": "2020-7-30 05:24:31",
+                "organization": "林业局",
+                "organizationId":1,
+                "mobile": "13149003370",
+                "account": "string44"
+            }
+        ],
+        "total": 4,
+        "size": 10,
+        "current": 1,
+        "orders": [],
+        "searchCount": true,
+        "pages": 1
+    }
+}
